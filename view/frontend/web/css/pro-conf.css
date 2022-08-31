@@ -1,0 +1,49 @@
+#pro-confirm {
+    width: 100%;
+}
+
+.pro-heading {
+    background: #000;
+    color: #fff;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.pro-confirm-details {
+    background: #eeeeee;
+    padding: 0.5rem;
+}
+
+.pro-confirm-details p {
+    margin: 0;
+}
+
+.pcf1 {
+    border-bottom: 1px solid #fff;
+}
+
+.pcf-terms-link {
+    color: #707070;
+    text-decoration: none;
+}
+
+.pcf-terms-link:hover {
+    text-decoration: underline;
+}
+
+#pro-confirm input {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.pro-heading,
+.pro-confirm-details {
+    padding: 1rem;
+}
+
+.pro-btn-disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
