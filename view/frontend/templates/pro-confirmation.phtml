@@ -36,6 +36,14 @@ $isProfessional = $productRepo['isprofessional'];
         #product-addtocart-button {
             display: none !important;
         }
+        
+        .paypal.checkout {
+            display: none !important;
+        }
+
+        .product-add-form {
+            display: none !important;
+        }
 
         #pro-confirm {
             display: none !important;
@@ -73,16 +81,21 @@ $isProfessional = $productRepo['isprofessional'];
     <script type="text/javascript">
         let professionalChecked = false;
         let addBtn = document.getElementById("product-addtocart-button");
+        let paypalBtn = document.querySelector(".paypal.checkout");
         addBtn.classList.add("pro-btn-disabled");
+        paypalBtn.classList.add("pro-btn-disabled");
         document.querySelector(".pcf-checkbox").addEventListener('click', function() {
             if (professionalChecked == false) {
                 professionalChecked = true;
                 addBtn.disabled = false;
                 addBtn.classList.remove("pro-btn-disabled");
+                paypalBtn.classList.remove("pro-btn-disabled");
+
             } else {
                 professionalChecked = false;
                 addBtn.disabled = true;
                 addBtn.classList.add("pro-btn-disabled");
+                paypalBtn.classList.add("pro-btn-disabled");
             }
         });
     </script>

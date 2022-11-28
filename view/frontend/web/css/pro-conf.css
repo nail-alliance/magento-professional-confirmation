@@ -47,3 +47,7 @@
     cursor: default;
     pointer-events: none;
 }
+
+.paypal.checkout {
+	margin-bottom: 5px;
+}
